@@ -1,54 +1,72 @@
 body {
-    justify-items: center;
-    background-color: antiquewhite;
-    font-family: monospace;
+  font-family: 'comic sans', sans-serif;
+  background-color: #fbe4c8;
+  margin: 0;
+  padding: 0;
 }
 
-main {
-    padding: 24px;
-    border-radius: 8px;
-    background-color: azure;
+.container {
+  max-width: 600px;
+  background-color: #e6fcfc;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-input[type=number],
-textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+h2 {
+  margin-bottom: 10px;
 }
 
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+output, textarea{
+    font-family: sans-serif;
+}
 button {
-    border: 0px;
-    padding: 8px;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.rumus-content {
-    font-size: 20px;
-    font-weight: bold;
+.konversi-btn {
+  background-color: #20c997;
+  color: white;
 }
 
-/* Global Usage */
-.padding-medium {
-    padding: 16px;
+.reset-btn {
+  background-color: #f67280;
+  color: white;
 }
 
-.bg-lightseagreen {
-    background-color: lightseagreen;
+.reverse-btn {
+  background-color: #c5dfff;
 }
 
-.bg-lightcoral {
-    background-color: lightcoral;
+.rumus {
+  margin-top: 20px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
 }
 
-.bg-lightblue {
-    background-color: lightblue;
+.rumus p {
+  margin: 5px 0;
 }
 
-/* Global Usage */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
