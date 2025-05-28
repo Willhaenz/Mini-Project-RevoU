@@ -1,21 +1,51 @@
+/* Header */
+header{
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Body */
 body {
-  font-family: 'comic sans', sans-serif;
-  background-color: #fbe4c8;
+  font-family: sans-serif;
+  background-color: #F4F6FF;
+  color: #F8F1F1;
   margin: 0;
   padding: 0;
 }
+.unit-selector {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
 
+.unit-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px; 
+}
+.unit-field label {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;       
+    font-weight: bold;
+}
+
+.unit-field select {
+    padding: 0.75rem 1rem;   
+    font-size: 1.2rem;       
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #F8F1F1;
+}
 .container {
   max-width: 600px;
-  background-color: #e6fcfc;
+  background-color: #10375C;
   margin: 30px auto;
   padding: 20px 30px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-  margin-bottom: 10px;
 }
 
 label {
@@ -23,15 +53,19 @@ label {
   margin: 10px 0 5px;
 }
 
+/* Input and Output */
 input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+  width: 97%;
+  padding: 10px;
   font-size: 1em;
+  background-color: #F8F1F1;
 }
 output, textarea{
     font-family: sans-serif;
+    background-color: #F8F1F1;
 }
+
+/* Buttons */
 button {
   padding: 8px 15px;
   margin-right: 10px;
@@ -42,29 +76,33 @@ button {
 }
 
 .konversi-btn {
-  background-color: #20c997;
-  color: white;
+  background-color: #EB8317;
+  font-size: medium;
+  color: black;
+  min-width: 150px;
+  padding: 10px;
 }
 
 .reset-btn {
   background-color: #f67280;
-  color: white;
+  font-size: medium;
+  color: black;
+  min-width: 150px;
+  padding: 10px;
 }
 
 .reverse-btn {
-  background-color: #c5dfff;
-}
-
-.rumus {
-  margin-top: 20px;
-  border-top: 1px solid #000;
-  padding-top: 10px;
+  background-color: #F3C623;
+  font-size: medium;
+  min-width: 150px;
+  padding: 10px;
 }
 
 .rumus p {
   margin: 5px 0;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 20px;
