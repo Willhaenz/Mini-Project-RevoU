@@ -13,36 +13,58 @@
     <div class="container">
     <!-- Header Content -->
     <header>
-        <h1>Website Konversi Suhu - @Haenzel</h1>
+        <h1>Website Konversi Suhu</h1>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Introduction -->
+    <!-- Introduction -->
         <section>
-            <p>Masukkan suhu derajat input-suhu (&deg;C) ke kotak dibawah...</p>
+            <p>Masukkan suhu derajat ke kotak dibawah...</p>
         </section>
 
-        <!-- Form Konversi Suhu -->
+    <!-- Form Konversi Suhu -->
         <form class="padding-medium">
-            <!-- Inputan suhu -->
-            <div>
-                <label for="input-suhu">Celcius (&deg;C):</label>
-                <input type="number" id="input-suhu" placeholder="contoh: 50">
-            </div>
+        <!-- Inputan suhu dan satuan -->
+    <div>
+        <label for="input-suhu">Nilai Suhu:</label>
+        <input type="number" id="input-suhu" placeholder="contoh: 50">
+    </div>
 
-            <!-- Tombol Action -->
+    <!-- Pilihan satuan suhu -->
+    <div class="unit-selector">
+    <div class="unit-field">
+        <label for="from-unit">Dari:</label>
+            <select id="from-unit">
+                <option value="celcius">Celcius (&deg;C)</option>
+                <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+                <option value="reamur">Reamur (&deg;Re)</option>
+            </select>
+    </div>
+
+    <div class="unit-field">
+            <label for="to-unit">Ke:</label>
+            <select id="to-unit">
+                <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                <option value="celcius">Celcius (&deg;C)</option>
+                <option value="kelvin">Kelvin (K)</option>
+                <option value="reamur">Reamur (&deg;Re)</option>
+            </select>
+    </div>
+    </div>
+
+        <!-- Tombol Action -->
             <div>
                 <button type="button" class="konversi-btn" onclick="convertTemperature()">Konversi</button>
                 <button type="button" class="reset-btn" onclick="resetForm()">Reset</button>
                 <button type="button" class="reverse-btn" onclick="reverseConversion()">Reverse</button>
             </div>
-        </form>
-
+    </form>
         <!-- Hasil Konversi -->
         <section class="padding-medium">
             <div>
-                <label for="hasil-suhu">Fahrenheit (&deg;F):</label>
+                <label for="hasil-suhu">Hasil suhu:</label>
                 <textarea id="hasil-suhu" readonly></textarea>
             </div>
         </section>
@@ -54,29 +76,13 @@
                 <textarea id="detail-suhu" readonly></textarea>
             </div>
         </section>
-
-        <!-- Keterangan Formula -->
-        <section>
-            <header>
-                <h2>Cara Konversi input-suhu (&deg;C) ke hasil-suhu (&deg;F)</h2>
-            </header>
-
-            <hr />
-
-            <div>
-                <p>Introduction dari rumus konversi suhu...</p>
-                <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p>
-                <p>Atau</p>
-                <p class="rumus-content">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p>
-            </div>
-        </section>
     </main>
 
     <!-- Footer Content -->
     <footer>
         <p>&copy; 2025 @Willhaenz</p>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
-
 </html>
